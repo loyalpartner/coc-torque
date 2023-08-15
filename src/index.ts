@@ -6,8 +6,7 @@ import {
 export async function activate(context: ExtensionContext): Promise<void> {
 
   const serverOptions = {
-    command: "torque-language-server",
-    args: ["-l", "/tmp/test"]
+    command: "torque-language-server"
   }
 
   const clientOptions: LanguageClientOptions = {

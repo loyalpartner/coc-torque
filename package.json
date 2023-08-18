@@ -1,6 +1,6 @@
 {
   "name": "coc-torque",
-  "version": "0.0.13",
+  "version": "0.0.25",
   "description": "torque language server",
   "author": "lee <loyalpartner@163.com>",
   "license": "MIT",
@@ -22,11 +22,11 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.13",
-    "coc.nvim": "^0.0.82",
-    "esbuild": "^0.14.24",
-    "eslint": "^8.10.0",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
+    "coc.nvim": "^0.0.83-next.9",
+    "esbuild": "^0.14.24",
+    "eslint": "^8.10.0",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "typescript": "^4.6.2",
@@ -55,6 +55,14 @@
     "bracketSpacing": false
   },
   "activationEvents": [
-    "*"
-  ]
+    "onLanguage:torque"
+  ],
+  "contributes": {
+    "rootPatterns": [
+      {
+        "filetype": "torque",
+        "patterns": [".git"]
+      }
+    ]
+  }
 }

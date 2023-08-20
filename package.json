@@ -1,6 +1,6 @@
 {
   "name": "coc-torque",
-  "version": "0.0.25",
+  "version": "0.0.31",
   "description": "torque language server",
   "author": "lee <loyalpartner@163.com>",
   "license": "MIT",
@@ -61,7 +61,7 @@
     "rootPatterns": [
       {
         "filetype": "torque",
-        "patterns": [".git"]
+        "patterns": ["LICENSE.v8"]
       }
     ]
   }

@@ -12,8 +12,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
     options: {
       cwd: workspace.rootPath
     },
-    args: [ "-l" , "/tmp/test"]
-    
+    // args: [ "-l" , "/tmp/test"]
   }
 
   const clientOptions: LanguageClientOptions = {
